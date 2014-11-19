@@ -1,0 +1,19 @@
+{
+  "name": "textom-link-node",
+  "version": "0.0.1",
+  "description": "TextOM links",
+  "license": "MIT",
+  "keywords": [
+    "nlcst",
+    "textom",
+    "retext",
+    "link"
+  ],
+  "dependencies": {
+    "wooorm/parse-link": "~0.0.3"
+  },
+  "repository": "wooorm/textom-link-node",
+  "scripts": [
+    "index.js"
+  ]
+}
