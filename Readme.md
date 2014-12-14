@@ -1,10 +1,8 @@
 # textom-link-node [![Build Status](https://img.shields.io/travis/wooorm/textom-link-node.svg?style=flat)](https://travis-ci.org/wooorm/textom-link-node) [![Coverage Status](https://img.shields.io/coveralls/wooorm/textom-link-node.svg?style=flat)](https://coveralls.io/r/wooorm/textom-link-node?branch=master)
 
-Classify links as `LinkNode`s.
+`LinkNode`s for [TextOM](https://github.com/wooorm/textom).
 
 Implemented by [retext-link](https://github.com/wooorm/retext-link), but separated for use by other plugins.
-
-> Note: this project is useful in combination with [TextOM](https://github.com/wooorm/textom).
 
 ## Installation
 
@@ -36,16 +34,15 @@ console.log(link.isRelative()); // false
 console.log(link.data);
 /**
  * {
+ *   href: 'http://example.com/',
+ *   pathname: '/',
  *   protocol: 'http:',
+ *   hostname: 'example.com',
  *   host: 'example.com',
  *   port: 80,
- *   hostname: 'example.com',
- *   hash: '',
  *   search: '',
  *   query: '',
- *   pathname: '/',
- *   path: '/',
- *   href: 'http://example.com/'
+ *   hash: ''
  * }
  */
 ```
@@ -54,17 +51,17 @@ console.log(link.data);
 
 ### TextOM.LinkNode
 
-All links, are classified as `LinkNode`s. LinkNode subclasses [Text](https://github.com/wooorm/textom#textomtextvalue-nlcsttext).
+LinkNode subclasses [`Text`](https://github.com/wooorm/textom#textomtextvalue-nlcsttext).
 
-#### LinkNode#isAbsolute()
+#### [LinkNode](https://github.com/wooorm/textom-link-node#textomlinknode)#isAbsolute()
 
 Returns whether the operated on node represents an absolute URL.
 
-#### LinkNode#isRelative()
+#### [LinkNode](https://github.com/wooorm/textom-link-node#textomlinknode)#isRelative()
 
 Returns whether the operated on node represents a relative URL.
 
-#### linkNode.data
+#### [LinkNode](https://github.com/wooorm/textom-link-node#textomlinknode).data
 
 Every `LinkNode`s data object contains information on the parser URL, such as a `protocol`, `pathname`, &c.
 
