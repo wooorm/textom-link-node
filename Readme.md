@@ -79,4 +79,4 @@ These properties are parsed with native Node.js or browser functions, thus prett
 
 ## License
 
-MIT © Titus Wormer
+MIT © [Titus Wormer](http://wooorm.com)
