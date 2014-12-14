@@ -10,7 +10,7 @@
     "link"
   ],
   "dependencies": {
-    "wooorm/parse-link": "~0.0.3"
+    "wooorm/parse-link": "^0.1.0"
   },
   "repository": "wooorm/textom-link-node",
   "scripts": [
