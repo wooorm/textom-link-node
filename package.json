@@ -1,37 +1,5 @@
 {
   "name": "textom-link-node",
-  "version": "0.1.0",
-  "description": "TextOM links",
-  "license": "MIT",
-  "keywords": [
-    "nlcst",
-    "textom",
-    "retext",
-    "link"
-  ],
-  "dependencies": {
-    "parse-link": "^0.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/textom-link-node.git"
-  },
-  "author": "Titus Wormer <tituswormer@gmail.com>",
-  "devDependencies": {
-    "eslint": "^0.10.0",
-    "istanbul": "^0.3.0",
-    "jscs": "^1.0.0",
-    "mocha": "^2.0.0",
-    "textom": "^0.4.0-rc.2"
-  },
-  "scripts": {
-    "test": "node_modules/.bin/_mocha --reporter spec --check-leaks -u exports test.js",
-    "test-travis": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks -u exports test.js",
-    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- test.js",
-    "lint": "npm run lint-api && npm run lint-test && npm run lint-style",
-    "lint-api": "node_modules/.bin/eslint index.js",
-    "lint-test": "node_modules/.bin/eslint test.js --env mocha",
-    "lint-style": "node_modules/.bin/jscs index.js test.js --reporter=inline",
-    "make": "npm run lint && npm run coverage"
-  }
+  "version": "0.2.0",
+  "description": "Deprecated"
 }
